@@ -1,5 +1,5 @@
 # Validador de Cartao
-##PSET-1
+## PSET-1
 Aluno: Henrique Abaurre Pina
 Professor Abrantes
 ## Função Validacao:
