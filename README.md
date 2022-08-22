@@ -1,7 +1,8 @@
 # Validador de Cartao
 ## PSET-1
 Aluno: Henrique Abaurre Pina
-Professor Abrantes
+
+Professor: Abrantes
 ## Função Validacao:
 Função responsavel por verificar se o numero do cartão informado pelo usuario é valido ou não seguindo o algoritmo de Luhn, retornando True ou False.
 ## Função Bandeira:
