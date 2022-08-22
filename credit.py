@@ -1,5 +1,5 @@
 #Função que faz o algoritmo de Luhn
-def Validacao(n):
+def validacao(n):
   nlist = [int(a) for a in str(n)]
   rlist = nlist
   rlist.reverse()
@@ -18,9 +18,9 @@ def Validacao(n):
     return False
 
 #Função para definir a bandeira do cartão, ou se ele é invalido
-def Bandeira(n):
+def bandeira(n):
   nlist = [int(a) for a in str(n)]
-  if Validacao(n) == True:
+  if validacao(n) == True:
     if (nlist[0] == 4) and (len(nlist) in [13,16]):
       print('VISA\n')
     elif (nlist[0] == 3) and (nlist[1] == 4 or 7) and (len(nlist) == 15):
@@ -33,12 +33,13 @@ def Bandeira(n):
     print('INVALIDO\n')
 
 #Programa principal + tratamento de erro
-while True:
+x = True
+while x == True:
   numero = input('Digite o numero do cartao, com apenas numeros (sem espaço, e/ou outros caracteres):\n')
   if numero.isdigit() == False:
     print('Numero invalido\n')
   else:
     n = int(numero)
-    Validacao(n)
-    Bandeira(n)
-    break
+    validacao(n)
+    bandeira(n)
+    x = False
